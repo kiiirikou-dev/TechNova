@@ -15,7 +15,7 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background-image: url("Image/image-entreprise.png");
+    background-image: url("images/image-entreprise.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -426,4 +426,70 @@ section {
 .contact-form button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(56,189,248,0.5);
+}
+
+/* ======== MOBILE FIX ======== */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 120px 20px 80px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* ABOUT */
+    .about-page {
+        margin-top: 120px;
+        padding: 0 15px;
+    }
+
+    .about-page h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-page p {
+        font-size: 1rem;
+    }
+
+    /* SERVICES */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
 }
