@@ -497,3 +497,36 @@ section {
         padding: 15px;
     }
 }
+
+/* ===== RESPONSIVE SERVICES ===== */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
